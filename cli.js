@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 const program = require("commander")
 const api = require("./index.js")
+const package = require("./package.json")
 
+program.version(package.version)
 program.option("-x, --xxx", "what the x")
 program
   .command("add")
