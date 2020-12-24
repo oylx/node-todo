@@ -26,7 +26,7 @@ module.exports.read = (title, p = dbPath) => {
 }
 module.exports.write = (data, p = dbPath) => {
   return new Promise((resolve, reject) => {
-    const string = JSON.stringify(data)
+    const string = JSON.stringify(data) + '\n  '
     fs.writeFile(p, string, (error) => {
       if (error) {
         reject(error)
