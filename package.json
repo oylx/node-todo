@@ -19,6 +19,7 @@
     "inquirer": "^7.3.3"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.19",
     "jest": "^24.9.0"
   }
 }
